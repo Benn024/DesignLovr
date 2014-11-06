@@ -1,50 +1,93 @@
+body{
+    background-image: url(img/f1.jpg);
+}
 li{
+    padding-left: 15px;
     display: block;
     border-radius: 5px;
     position: absolute;
     z-index: 1;
     background-color: yellow;
+    -moz-box-shadow: #000 2px 4px 2px;
+    -webkit-box-shadow: #000 2px 2px 2px;
+    font-family: 'Gloria Hallelujah', cursive;
+    line-height: 1.25em;
+}
+li:hover{
+
 }
 #card-1{
     height: 500px;
     border: thin solid black;
-    width: 200px;
-    left: 550px;
+    width: 320px;
+    left: 450px;
     transform: rotate(-30deg);
     z-index: 2;
-    top: 100px;
+    top: 220px;
+}
+#card-1:hover{
+    -moz-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 10;
 }
 #card-2{
     height: 500px;
     border: thin solid black;
-    width: 200px;
-    left: 700px;
-    top: 50px;
+    width: 320px;
+    left: 600px;
+    top: 150px;
     transform: rotate(-15deg);
     z-index: 3;
+}
+#card-2:hover{
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    z-index: 10;
 }
 #card-3{
     height: 500px;
     border: thin solid black;
-    width: 200px;
-    left: 850px;
+    width: 320px;
+    left: 750px;
     z-index: 4;
+    top: 100px;
+}
+#card-3:hover{
+    z-index: 10;
 }
 #card-4{
     height: 500px;
     border: thin solid black;
-    width: 200px;
-    left: 1000px;
+    width: 320px;
+    left: 900px;
     transform: rotate(15deg);
     z-index: 3;
-    top: 50px;
+    top: 150px;
+}
+#card-4:hover{
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    z-index: 10;
 }
 #card-5{
     height: 500px;
     border: thin solid black;
-    width: 200px;
-    left: 1150px;
+    width: 320px;
+    left: 1050px;
     transform: rotate(30deg);
     z-index: 2;
-    top: 100px;
+    top: 220px;
+}
+#card-5:hover{
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    z-index: 10;
+}
+img{
+
+}
+#bottom{
+    position: fixed;
+    bottom: 0px;
+    margin-left: -10px;
 }
