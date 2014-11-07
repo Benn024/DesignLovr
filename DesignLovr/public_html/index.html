@@ -11,6 +11,13 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="cards.css">
         <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+        
+        <script>
+            
+            function ani(){
+                document.getElementByID('bil').className ='classname';
+            }
+        </script>
     </head>
     <body>
         <div id="wrapper">
@@ -82,6 +89,10 @@ and open the template in the editor.
             </li>
         </ul>
     </div>
-        <img id="bottom" src="img/road.png" alt="#">
+        <div>
+            <input id="button" value="Klicka Här!" type="button" onclick="ani()"/>
+        </div>
+        <div id="bil"><img src="img/sideview.png" alt="#"></div>
+        <!--<img id="bottom" src="img/road.png" alt="#">-->
     </body>
 </html>

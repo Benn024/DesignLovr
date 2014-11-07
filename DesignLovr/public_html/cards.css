@@ -1,5 +1,9 @@
 body{
     background-image: url(img/f1.jpg);
+    height: 100%;
+}
+#wrapper{
+    
 }
 li{
     padding-left: 15px;
@@ -86,8 +90,47 @@ li:hover{
 img{
 
 }
-#bottom{
-    position: fixed;
+#bil{
+    z-index: 40;
+    position: absolute;
     bottom: 0px;
-    margin-left: -10px;
+    padding-bottom: 10px;
+    /*margin-bottom: -40px;*/
+    /*padding-top: 850px;*/
+    right: 0px;
+    /*display: none;*/
+    
+}
+#button{
+    z-index: 13;
+    position: absolute;
+    bottom: 140px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.classname{
+/*    -webkit-animation: movecar 10s infinite;
+    -moz-animation: movecar 10s infinite;
+    -o-animation: movecar 10s infinite;*/
+    animation: movecar 10s infinite;
+    -webkit-animation: movecar 10s infinite;
+    -moz-animation: movecar 10s infinite;
+    animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes movecar{
+    from{margin-left: 1000px;}
+    to{margin-left: -1000px;}
+    
+}
+@-moz-keyframes movecar{
+    from{margin-left: 1000px;}
+    to{margin-left: -1000px;}
+    
 }
