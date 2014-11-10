@@ -11,88 +11,96 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="cards.css">
         <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-        
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script>
-            
-            function ani(){
-                document.getElementByID('bil').className ='classname';
-            }
+            console.log("startad");
+//            $("#bil").animate({"right": '-=500px'}, 1, 'linear');
+            $(document).ready(function() {
+
+                $("#go").click(function() {
+                    console.log("go");
+            //        $("div").hide();
+                    $("#bil").animate({"right": '+=130%'}, 4000, 'linear');                   
+                });
+                                
+            });
         </script>
     </head>
     <body>
         <div id="wrapper">
-        <ul id="index_cards">
-            <li id="card-1">
-                <h3>Card 1</h3>
-                <img src="img/mercedes.png" alt="#" />
-                <p>Driver 1: Nico Rosberg<br />
-                Age: 29<br />
-                WCS: 0<br />
-                <br />
-                Driver 2: Lewis Hamilton<br />
-                Age: 29<br />
-                WCS: 1<br />
-                <br />
-                Car model: Mercedes F1 W05 Hybrid</p>
-            </li>
-            <li id="card-2">
-                <h3>Card 2</h3>
-                <img src="img/rbr.png" alt="#" />
-                <p>Driver 1: Sebastian Vettel<br />
-                Age: 27<br />
-                WCS: 4<br />
-                <br />
-                Driver 2: Daniel Ricciardo<br />
-                Age: 25<br />
-                WCS: 0<br />
-                <br />
-                Car model: Red Bull RB10</p>
-            </li>
-            <li id="card-3">
-                <h3>Card 3</h3>
-                <img src="img/ferrari.png" alt="#" />
-                <p>Driver 1: Kimi Räikkönen<br />
-                Age: 35<br />
-                WCS: 1<br />
-                <br />
-                Driver 2: Fernando Alonso<br />
-                Age: 33<br />
-                WCS: 2<br />
-                <br />
-                Car model: Ferrari F14T</p>
-            </li>
-            <li id="card-4">
-                <h3>Card 4</h3>
-                <img src="img/wmr.jpg" alt="#" />
-                <p>Driver 1: Valtteri Bottas<br />
-                Age: 25<br />
-                WCS: 0<br />
-                <br />
-                Driver 2: Felipe Massa<br />
-                Age: 33<br />
-                WCS: 0<br />
-                <br />
-                Car model: FW36</p>
-            </li>
-            <li id="card-5">
-                <h3>Card 5</h3>
-                <img src="img/sauber.png" alt="#" />
-                <p>Driver 1: Adrian Sutil<br />
-                Age: 31<br />
-                WCS: 0<br />
-                <br />
-                Driver 2: Esteban Gutiérrez<br />
-                Age: 23<br />
-                WCS: 0<br />
-                <br />
-                Car model: Sauber C33</p>
-            </li>
-        </ul>
-    </div>
+            <ul id="index_cards">
+                <li id="card-1">
+                    <h3>Card 1</h3>
+                    <img src="img/mercedes.png" alt="#" />
+                    <p>Driver 1: Nico Rosberg<br />
+                        Age: 29<br />
+                        WCS: 0<br />
+                        <br />
+                        Driver 2: Lewis Hamilton<br />
+                        Age: 29<br />
+                        WCS: 1<br />
+                        <br />
+                        Car model: Mercedes F1 W05 Hybrid</p>
+                </li>
+                <li id="card-2">
+                    <h3>Card 2</h3>
+                    <img src="img/rbr.png" alt="#" />
+                    <p>Driver 1: Sebastian Vettel<br />
+                        Age: 27<br />
+                        WCS: 4<br />
+                        <br />
+                        Driver 2: Daniel Ricciardo<br />
+                        Age: 25<br />
+                        WCS: 0<br />
+                        <br />
+                        Car model: Red Bull RB10</p>
+                </li>
+                <li id="card-3">
+                    <h3>Card 3</h3>
+                    <img src="img/ferrari.png" alt="#" />
+                    <p>Driver 1: Kimi Räikkönen<br />
+                        Age: 35<br />
+                        WCS: 1<br />
+                        <br />
+                        Driver 2: Fernando Alonso<br />
+                        Age: 33<br />
+                        WCS: 2<br />
+                        <br />
+                        Car model: Ferrari F14T</p>
+                </li>
+                <li id="card-4">
+                    <h3>Card 4</h3>
+                    <img src="img/wmr.jpg" alt="#" />
+                    <p>Driver 1: Valtteri Bottas<br />
+                        Age: 25<br />
+                        WCS: 0<br />
+                        <br />
+                        Driver 2: Felipe Massa<br />
+                        Age: 33<br />
+                        WCS: 0<br />
+                        <br />
+                        Car model: FW36</p>
+                </li>
+                <li id="card-5">
+                    <h3>Card 5</h3>
+                    <img src="img/sauber.png" alt="#" />
+                    <p>Driver 1: Adrian Sutil<br />
+                        Age: 31<br />
+                        WCS: 0<br />
+                        <br />
+                        Driver 2: Esteban Gutiérrez<br />
+                        Age: 23<br />
+                        WCS: 0<br />
+                        <br />
+                        Car model: Sauber C33</p>
+                </li>
+            </ul>
+        
         <div>
-            <input id="button" value="Klicka Här!" type="button" onclick="ani()"/>
+            <button id="go">Klicka Här!</button>
         </div>
         <div id="bil"><img src="img/sideview.png" alt="#"></div>
         <!--<img id="bottom" src="img/road.png" alt="#">-->
+        </div>
     </body>
 </html>

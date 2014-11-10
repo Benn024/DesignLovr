@@ -1,9 +1,12 @@
 body{
     background-image: url(img/f1.jpg);
     height: 100%;
+    overflow: hidden;
 }
 #wrapper{
-    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 li{
     padding-left: 15px;
@@ -97,11 +100,12 @@ img{
     padding-bottom: 10px;
     /*margin-bottom: -40px;*/
     /*padding-top: 850px;*/
-    right: 0px;
+    right: -500px;
+    //margin-left: 100%;
     /*display: none;*/
     
 }
-#button{
+#go{
     z-index: 13;
     position: absolute;
     bottom: 140px;
@@ -110,10 +114,10 @@ img{
     color: white;
     border: none;
 }
-.classname{
-/*    -webkit-animation: movecar 10s infinite;
+/*.classname{
+    -webkit-animation: movecar 10s infinite;
     -moz-animation: movecar 10s infinite;
-    -o-animation: movecar 10s infinite;*/
+    -o-animation: movecar 10s infinite;
     animation: movecar 10s infinite;
     -webkit-animation: movecar 10s infinite;
     -moz-animation: movecar 10s infinite;
@@ -133,4 +137,4 @@ img{
     from{margin-left: 1000px;}
     to{margin-left: -1000px;}
     
-}
+}*/
